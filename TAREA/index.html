@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div>
+        <label for="num1">Primer número:</label>
+        <input type="number" id="num1">
+    </div>
+    <div>
+        <label for="operador">Operador:</label>
+        <input type="text" id="operador">
+    </div>
+    <div>
+        <label for="num2">Segundo número:</label>
+        <input type="number" id="num2">
+    </div>
+    <button onclick="realizarOperacion()">Realizar Operación</button>
+    <div id="resultado"></div>
+    <div id="historial"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
