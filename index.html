@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <button id="button-login">Iniciar sesin con Google</button>
+      <button id="button-logout" class="hidden">Cerrar sesión</button>
+      <form id="todo-form" class="hidden">
+        <div id="user-info"></div>
+        <input
+          id="todo-input"
+          type="text"
+          placeholder="Todo"
+            autocomplete="off"
+        />
+      </form>
+
+      <div id="todos-container"></div>
+    </div>
+    <script type="module">
+      // Importar Firebase y los módulos necesarios
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+      import { getAuth } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js";
+      import { getFirestore } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore.js";
+
+      // configuración de Firebase
+      const firebaseConfig = {
+          apiKey: "AIzaSyBMAxJJo9yjFRKQt-nl9eC7fz9LblQZ3FQ",
+          authDomain: "todo-9cb87.firebaseapp.com",
+          projectId: "todo-9cb87",
+          storageBucket: "todo-9cb87.appspot.com",
+          messagingSenderId: "359557836961",
+          appId: "1:359557836961:web:b778d7e48c009f9cc880e0"
+      };
+
+      // Inicializar Firebase
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+      const firestore = getFirestore(app);
+
+      // código JavaScript 
+  </script>
+
+  <script src="app.js" type="module"></script>
+  </body>
+</html>
